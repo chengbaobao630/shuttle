@@ -1,0 +1,43 @@
+PATH
+  remote: .
+  specs:
+    shuttle (0.1.0)
+      activesupport (~> 4.1)
+      i18n (~> 0.6)
+      minitest (~> 5.1)
+      terminal-table (~> 1.4)
+      thread_safe (~> 0.3)
+      tzinfo (~> 1.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (4.2.10)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    concurrent-ruby (1.0.5)
+    i18n (0.9.5)
+      concurrent-ruby (~> 1.0)
+    json (1.8.6)
+    minitest (5.11.3)
+    rake (10.5.0)
+    terminal-table (1.8.0)
+      unicode-display_width (~> 1.1, >= 1.1.1)
+    thread_safe (0.3.6)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
+    unicode-display_width (1.4.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.16)
+  json (~> 1.8)
+  rake (~> 10.0)
+  shuttle!
+
+BUNDLED WITH
+   1.16.4

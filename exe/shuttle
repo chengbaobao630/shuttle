@@ -1,0 +1,41 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/shuttle'
+
+# 可执行文件
+module ShuttleCli
+
+  # @!method entrypoint
+  class Cli
+    class << self
+
+      def reader
+        @reader ||= Shuttle::Reader.new
+      end
+
+      def printer
+        @printer ||= Shuttle::Printer.new
+      end
+
+      def start
+        if ARGV && ARGV[0]
+          cmd = ARGV[0]
+          cmds = reader.parse_file
+          if cmd.to_i.to_s == cmd &&
+             cmd.to_i > 0 && cmd.to_i < cmds.length
+            cmds[cmd.to_i - 1].connect
+          else
+            puts '请检查后输入！'
+          end
+        else
+          printer.print reader.parse_file
+        end
+      end
+
+    end
+
+  end
+end
+
+
+ShuttleCli::Cli.start
