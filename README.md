@@ -41,3 +41,9 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the Shuttle project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/shuttle/blob/master/CODE_OF_CONDUCT.md).
+
+
+
+
+
+## 这是一个从shuttle-cli 复制 做了些小改动的练手项目
